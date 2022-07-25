@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vaporium</title>
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+</head>
+
+<body>
+
+    <main class="container p-4">
+        <h1 class=" text-center title  text-black">Admin</h1>
+
+        <div class="row">
+
+            <div class="col-md-4 offset-md-4 my-auto ">
+     
+                <div class="card" >
+                    <img src="/static/147457405_134732525196308_6133116869407434899_n-removebg-preview.png" alt="Vaporium">   
+                    <div class="card-header">
+
+                        <form action="/create-admin" method="POST">
+                            <div class="form-group ">
+                                <input type="text" name="nombre_del_empleado" placeholder="Nombre" class="form-control" autofocus>
+                            </div>
+                            <div class="form-group ">
+                                <input type="text" name="apellido_del_empleado" placeholder="Apellido" class="form-control" autofocus>
+                            </div>
+                            <div class="form-group ">
+                                <input type="text" name="cedula_del_empleado" placeholder="Cédula de Identidad" class="form-control" autofocus>
+                                <div class="py-4">
+                            <div class="form-group ">
+                                <input type="password" name="password0" placeholder="Contraseña" class="form-control" autofocus>
+                                <div class="py-4">
+                            <div class="form-group ">
+                                <input type="password" name="password1" placeholder="Verificar Contraseña" class="form-control" autofocus>
+                                <div class="py-4">
+                            <button type="submit" class="btn btn-primary btn-block py-2">Crear Administrador</button>
+                        </div>
+                        </form>
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
